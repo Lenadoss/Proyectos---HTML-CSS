@@ -1,7 +1,5 @@
+/* nav Index*/
 body {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 50px;
     background-color: rgb(147, 184, 147);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -32,4 +30,63 @@ body {
 
 .navegacion a:hover{
     color: rgb(68, 61, 26);
+}
+
+/* Maquetación Index */
+
+#GridIndex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-rows: 200px 1fr 250px;
+    grid-template-areas: 
+    "Header Header Header"
+    "Main Main Aside"
+    "Footer Footer Footer";
+    max-width: 1200px;
+    align-self: center;
+    justify-self: center;
+    
+}
+
+#HeaderIndex {
+    grid-area: Header;
+    border-bottom: 1px solid rgb(39, 37, 23);
+    padding: 10px;
+}
+
+#MainIndex {
+    grid-area: Main;
+    padding : 10px;
+    margin-top: 20px;
+}
+
+#AsideIndex {
+    grid-area: Aside;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#FooterIndex {
+    grid-area: Footer;
+    background-color: rgb(15, 15, 15);
+}
+
+/* Main Index */
+
+.SectionImagen img {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+
+.QuienesSomos h1{
+    display:flex;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+.QuienesSomos p{
+  
+    text-align: center;
 }
