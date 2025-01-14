@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>One Respe | Inicio</title>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "device-width , initial-scale = 1.0">
+        <style>
+            body{
+                font-family:'Courier New', Arial, monospace;
+                background-color: rgb(236, 213, 213);
+                margin-left: 100px;
+                margin-right: 100px;
+                padding: 0;
+            }
+
+            .InfoAdicion{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                text-align: start;
+                background-color: aliceblue;
+            }
+
+            .SobreNosotros {
+                background-color: rgb(236, 223, 223);
+                margin-top: 10px;
+            }
+
+            .SobreNosotros p{
+                text-align: start;
+            }
+            .navegacion {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid palevioletred;
+                width: 100%;
+                margin: 0 auto;
+            }
+            label{
+                display : block;
+                margin-top: 10px;
+            }
+
+            
+
+            .menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                border: 1px solid black;
+                width: 50%;
+                position: relative;
+                top: 50px;
+                left: 50px;
+            }
+            a{
+                text-decoration :overline;
+                color: black;                
+            }
+
+            a:hover{
+                color: rgb(68, 61, 26);
+            }
+            
+            .logo{
+                width: 200px;
+                height: 200px;
+            }
+
+            .DivLinks {
+                display: flex; 
+                flex-direction: row; 
+                justify-content: center;
+            }
+
+            .DivLinks a{
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .Contactanos {
+                background-color: rgb(236, 223, 223);
+            }
+
+            .Contactanos p{
+                text-align: center;
+            }
+
+            .Contactanos h3{
+                text-align: center;
+            }    
+            
+            .Apoyanos{
+                background-color: rgb(255, 255, 255);
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            .Apoyanos form {
+                display: flex; 
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .Apoyanos form button {
+                margin-top: 10px;
+                padding: 7px;
+                border: 1px solid black;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .BotonEnviar{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .Apoyanos header {
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class = "navegacion">
+                <img class = "logo" src="LogoOneRespe.png" alt = "Imagen del logo de la organización no gubernamental One Respe" title="Logo de One Respe">
+                <div class = "menu">
+                    <a href="#SobreNosotros">Sobre Nosotros</a>
+                    <a href ="#Contactanos">Contactanos</a>
+                    <a href = "#Apoyanos">Apoyanos</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <article class = "SobreNosotros">
+                <header>
+                    <h1>One Respe</h1>
+                </header>
+                <p>
+                    One Respe es una organizacion no gubernamental fundada con el proposito inicial 
+                    de ayudar y dar esperanzas sin distinción de raza, genero, religión u orientación sexial.
+                </p>
+            </article>
+                <aside class = "InfoAdicion">
+                    <header>
+                        <h2>¿Cómo aportamos nuestro grano de arena para que el mundo sea mejor?</h2>    
+                    </header>
+                    <p>
+                        La organización "One Respe" se fundó en el 2000 y desde ese momento. La forma
+                        en que hemos aportado al mundo ha sido con campamentos de verano para niños de bajos recursos,
+                        eventos de recaudación de fondos para ayudar a personas que no reciben las oportunidades que
+                        todos merecemos sin importar nuestro color de piel, raza, genero, religión u orientación sexual.
+                    </p>      
+                </aside>
+                <section class = "Contactanos">
+                    <header>
+                        <h3>Contactanos</h3>
+                    </header>
+                    <p>
+                        Si deseas contactarnos para saber más sobre nuestra organización, puedes hacerlo a través de
+                        nuestras redes sociales o enviandonos un correo electronico al siguiente correo: <strong>administraciononerespe@gmail.com</strong>.
+                    </p>
+                    <div class = "DivLinks">
+                        <a href="https://www.instagram.com/onerespe1/?hl=es" target = "_blank" >Instagram</a>
+                        <a href="https://web.facebook.com/OneResp/?locale=es_LA&_rdc=1&_rdr" target = "_blank">Facebook</a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=XBcJkvdsVGzXThnZvkkNHkhLFXCdZklGqrNmBZtpQzHWTHbsTmMwtJqwHxzpjSPNRmmJXwWFmbsLQTBl" target = "_blank">Gmail</a>
+                    </div>
+                </section>
+                <section class = "Apoyanos">
+                    <header>
+                        <h4>Apoyanos</h4>
+                    </header>
+                    <form>
+                        <fieldset>
+                            <legend>Información personal</legend>
+                            <label>Nombre:
+                                <input type="text" name="nombre" required>
+                            </label>
+                            <label>Apellido:
+                                <input type="text" name = "apellido" required>
+                            </label>
+                            <label>Correo electronico:
+                                <input type="email" name = "correo" required>
+                            </label>
+                            <label>Número de teléfono:
+                                <input type = "tel" name = "telefono" required>
+                            </label>
+                            <div class = "BotonEnviar">
+                                <button type="submit">Enviar información</button> 
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Donación</legend>
+                            <label>¿Cuánto deseas donar?
+                                <input type="number" name="donacion" required>
+                            </label>
+                            <label>Comprobante de donación
+                                <button type = "submit" name = "comprobante" required>Agregar Comprobante</button>
+                            </label>
+                        </fieldset>
+                    </form>
+                </section>
+        </main>
+    </body>
+</html>
